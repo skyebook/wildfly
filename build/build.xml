@@ -308,9 +308,11 @@
             <maven-resource group="org.jboss.logmanager" artifact="log4j-jboss-logmanager"/>
         </module-def>
 
-        <module-def name="org.jboss.remoting3">
-            <maven-resource group="org.jboss.remoting3" artifact="jboss-remoting"/>
+        <module-def name="org.jboss.remoting">
+            <maven-resource group="org.jboss.remoting" artifact="jboss-remoting"/>
         </module-def>
+
+        <module-def name="org.jboss.remoting3" />
 
         <module-def name="org.jboss.remoting3.remoting-jmx" />
 
@@ -388,7 +390,7 @@
 
         <module-def name="com.sun.jsf-impl">
             <maven-resource group="com.sun.faces" artifact="jsf-impl"/>
-        </module-def>        
+        </module-def>
 
         <module-def name="com.sun.xml.bind">
             <maven-resource group="com.sun.xml.bind" artifact="jaxb-impl"/>
@@ -440,7 +442,7 @@
         <module-def name="javax.faces.api">
             <maven-resource group="org.jboss.spec.javax.faces" artifact="jboss-jsf-api_2.2_spec"/>
         </module-def>
-        
+
         <module-def name="javax.inject.api">
             <maven-resource group="javax.inject" artifact="javax.inject"/>
         </module-def>
@@ -884,7 +886,7 @@
 
         <module-def name="org.jboss.as.jsf-injection">
             <maven-resource group="org.jboss.as" artifact="jboss-as-jsf-injection" />
-        </module-def>        
+        </module-def>
 
         <module-def name="org.jboss.as.logging">
             <maven-resource group="org.jboss.as" artifact="jboss-as-logging"/>

@@ -75,7 +75,7 @@ public class JdrReportService implements JdrReportCollector, Service<JdrReportCo
     /**
      * Collect a JDR report when run outside the Application Server.
      */
-    public JdrReport standaloneCollect(String host, String port) throws OperationFailedException {
+    public JdrReport standaloneCollect(String protocol, String host, String port) throws OperationFailedException {
         String username = null;
         String password = null;
 
@@ -85,8 +85,11 @@ public class JdrReportService implements JdrReportCollector, Service<JdrReportCo
         if (port == null) {
             port = "9999";
         }
+        if(protocol == null) {
+            protocol = "http-remoting";
+        }
 
-        return new JdrRunner(username, password, host, port).collect();
+        return new JdrRunner(protocol, username, password, host, port).collect();
     }
 
     /**

@@ -2575,7 +2575,7 @@
       </licenses>
     </dependency>
     <dependency>
-      <groupId>org.jboss.remoting3</groupId>
+      <groupId>org.jboss.remoting</groupId>
       <artifactId>jboss-remoting</artifactId>
       <licenses>
         <license>
@@ -2586,7 +2586,7 @@
       </licenses>
     </dependency>
     <dependency>
-      <groupId>org.jboss.remoting3</groupId>
+      <groupId>org.jboss.remotejmx</groupId>
       <artifactId>remoting-jmx</artifactId>
       <licenses>
         <license>
